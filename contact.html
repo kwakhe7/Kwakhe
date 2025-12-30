@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0ea5e9">
+<title>Contact — Software Developer</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="brand" href="index.html">Tswelopele</a>
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#education">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <button id="theme-toggle" class="button icon" aria-label="Toggle theme">🌗</button>
+      <button id="menu-toggle" class="button icon" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  </header>
+
+<main class="container">
+  <section class="reveal" style="padding: 36px 20px;">
+    <h1>Contact</h1>
+    <p>Get in touch through the form or connect via the links below.</p>
+    <div class="cards" style="margin-top: 16px;">
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/kwakhe7" target="_blank" rel="noopener">https://github.com/kwakhe7</a></p>
+      </div>
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:kwakhekhumalo7@gmail.com">kwakhekhumalo7@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Phone</h3>
+        <p>+27 76 221 6166</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal" style="padding: 0 20px 36px 20px;">
+    <h2>Send a message</h2>
+    <form id="contact-form" style="display: grid; gap: 12px; max-width: 640px;">
+      <input type="text" name="name" placeholder="Your name" class="input">
+      <input type="email" name="email" placeholder="Your email" class="input">
+      <textarea name="message" placeholder="Your message" rows="6" class="input"></textarea>
+      <button type="submit" class="button primary">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>© <span id="year"></span> Tswelopele Khumalo</div>
+    <div class="social">
+      <a href="https://github.com/kwakhe7" target="_blank" rel="noopener">GitHub</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(226, 232, 240, 0.12);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
+}
+</style>
+<script src="script.js"></script>
+</body>
+</html>
